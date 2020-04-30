@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1CB5E0"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingVertical="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:scaleX="1.0"
+            android:scaleY="1.0"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingVertical="10dp"
+            android:text="What would you like to do?"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_donateFood"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginVertical="2dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/ic_donate_food"
+            android:gravity="center"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="10dp"
+            android:shadowColor="#EEEEEE"
+            android:text="Donate Food" />
+
+        <Button
+            android:id="@+id/button_getFood"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginVertical="2dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/ic_get_food"
+            android:gravity="center"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="10dp"
+            android:shadowColor="#EEEEEE"
+            android:text="Get Food" />
+
+        <Button
+            android:id="@+id/button_registerElderly"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginVertical="2dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/ic_register_elderly"
+            android:gravity="center"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="10dp"
+            android:shadowColor="#EEEEEE"
+            android:text="Register for ..." />
+
+        <Button
+            android:id="@+id/button_redeem"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginVertical="2dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/delivery2"
+            android:gravity="center"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="10dp"
+            android:shadowColor="#EEEEEE"
+            android:text="Deliver Food" />
+
+    </LinearLayout>
+</LinearLayout>

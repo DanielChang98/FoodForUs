@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1CB5E0"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingVertical="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingVertical="10dp"
+            android:text="Redeemable Vouchers"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_mcd"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginVertical="2dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/mcd2"
+            android:drawableRight="@drawable/mcdw"
+            android:gravity="center"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="10dp"
+            android:shadowColor="#EEEEEE" />
+
+        <Button
+            android:id="@+id/button_laksa"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginVertical="2dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/laksalogo"
+            android:drawableRight="@drawable/laksaword"
+            android:gravity="center"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="10dp"
+            android:shadowColor="#EEEEEE"
+            android:text="Get Food" />
+
+        <Button
+            android:id="@+id/button_roticanai"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginVertical="2dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/roticanai"
+            android:drawableRight="@drawable/roticanaiword"
+            android:gravity="center"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="10dp"
+            android:shadowColor="#EEEEEE" />
+
+        <Button
+            android:id="@+id/button_burger"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginVertical="2dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/ramlyb"
+            android:drawableRight="@drawable/burgerw"
+            android:gravity="center"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="10dp"
+            android:shadowColor="#EEEEEE" />
+
+    </LinearLayout>
+</LinearLayout>

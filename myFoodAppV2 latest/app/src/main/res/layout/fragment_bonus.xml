@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1CB5E0"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingVertical="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleX="1.0"
+                android:scaleY="1.0"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingVertical="15dp"
+                android:text="---Bonus Point---"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="3"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="90dp"
+                android:scaleX="0.4"
+                android:scaleY="0.4"
+                app:srcCompat="@drawable/ic_stars_black_24dp" />
+
+            <TextView
+                android:id="@+id/text_bonus"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_redeem"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginVertical="2dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/redeemvoucher"
+                android:gravity="center"
+                android:paddingHorizontal="50dp"
+                android:paddingVertical="10dp"
+                android:shadowColor="#EEEEEE"
+                android:text="Redeem Vouchers" />
+
+            <Button
+                android:id="@+id/button_viewVoucher"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginVertical="2dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/ic_redeem"
+                android:gravity="center"
+                android:paddingHorizontal="50dp"
+                android:paddingVertical="10dp"
+                android:shadowColor="#EEEEEE"
+                android:text="Your Vouchers" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="20dp"
+    tools:context=".ui.donateFood.DonateFoodFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="3dp"
+                    android:text="Food"
+                    android:textColor="@color/colorPrimary" />
+
+                <ImageView
+                    android:id="@+id/image_dfWarningFood"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_margin="2dp"
+                    app:srcCompat="@drawable/ic_left_arrow" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/editText_donateFoodTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/primary_color_border"
+                android:hint="Food you want to donate"
+                android:inputType="textCapSentences|textAutoCorrect"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="3dp"
+                    android:text="Description"
+                    android:textColor="@color/colorPrimary" />
+
+                <ImageView
+                    android:id="@+id/image_dfWarningDescription"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_margin="2dp"
+                    app:srcCompat="@drawable/ic_left_arrow" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editText_donateFoodDescription"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/primary_color_border"
+                android:gravity="start"
+                android:hint="Add some description.."
+                android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="5dp"
+                android:scrollbars="vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="3dp"
+                    android:text="Amount"
+                    android:textColor="@color/colorPrimary" />
+
+                <ImageView
+                    android:id="@+id/image_dfWarningAmount"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_margin="2dp"
+                    app:srcCompat="@drawable/ic_left_arrow" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editText_donateFoodAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/primary_color_border"
+                    android:hint="Amount "
+                    android:inputType="number"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="Pax" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="3dp"
+                    android:text="Location"
+                    android:textColor="@color/colorPrimary" />
+
+                <ImageView
+                    android:id="@+id/image_dfWarningLocation"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_margin="2dp"
+                    app:srcCompat="@drawable/ic_left_arrow" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_donateFoodLocation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_weight="7"
+                    android:background="@drawable/primary_color_border"
+                    android:hint="Location"
+                    android:inputType="textPostalAddress"
+                    android:maxLines="3"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="5dp"
+                    android:textColor="#000" />
+
+                <Button
+                    android:id="@+id/button_donateFoodLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/primary_color_border"
+                    android:text="Search\n location"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="3dp"
+                    android:text="Contact Number"
+                    android:textColor="@color/colorPrimary" />
+
+                <ImageView
+                    android:id="@+id/image_dfWarningContact"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_margin="2dp"
+                    app:srcCompat="@drawable/ic_left_arrow" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editText_donateFoodContactNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/primary_color_border"
+                android:hint="ContactNumber"
+                android:inputType="phone"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="5dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="3dp"
+                    android:text="Image of your donation"
+                    android:textColor="@color/colorPrimary" />
+
+                <ImageView
+                    android:id="@+id/image_dfWarningImage"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_margin="2dp"
+                    app:srcCompat="@drawable/ic_left_arrow" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp">
+
+                <ImageView
+                    android:id="@+id/imageView_donateFoodImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#DDDDDD" />
+
+                <Button
+                    android:id="@+id/button_uploadFoodImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:background="#FFFFFF"
+                    android:drawableLeft="@drawable/ic_image"
+                    android:paddingHorizontal="4dp"
+                    android:paddingVertical="2dp"
+                    android:text="  Upload image"
+                    android:textColor="@color/colorPrimary" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <Button
+            android:id="@+id/button_donate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:paddingHorizontal="20dp"
+            android:text="Donate!"
+            android:textColor="#FFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createText"
+        app:layout_constraintVertical_bias="0.25" />
+
+</RelativeLayout>
